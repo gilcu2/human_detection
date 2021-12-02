@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 
 
-def detect_person():
+def HOG():
     hog = cv2.HOGDescriptor()
     hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 
@@ -47,4 +47,4 @@ def detect_person():
 
 
 if __name__ == '__main__':
-    detect_person()
+    HOG()
