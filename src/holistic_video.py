@@ -7,6 +7,7 @@ mp_drawing_styles = mp.solutions.drawing_styles
 mp_holistic = mp.solutions.holistic
 BG_COLOR = (192, 192, 192)
 
+
 # # For static images:
 # IMAGE_FILES = []
 # with mp_holistic.Holistic(
@@ -57,6 +58,7 @@ BG_COLOR = (192, 192, 192)
 # For webcam input:
 def holistic():
     cap = cv2.VideoCapture(4)
+    idx = 0
     with mp_holistic.Holistic(
             min_detection_confidence=0.5,
             min_tracking_confidence=0.5, enable_segmentation=True) as holistic:
@@ -71,6 +73,8 @@ def holistic():
             # pass by reference.
             image.flags.writeable = False
             image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+            cv2.imwrite(f'/tmp/image{idx:03d}.png', image)
+            idx += 1
             results = holistic.process(image)
 
             # Draw segmentation on the image.
