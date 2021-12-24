@@ -88,6 +88,7 @@ if __name__ == '__main__':
     ]
 
     arms_front_files = [
+        '/home/gilcu2/prog/unity/paint_balls/Assets/Media/armsFront0.png',
         '/home/gilcu2/prog/unity/paint_balls/Assets/Media/armsFront1.png',
         '/home/gilcu2/prog/unity/paint_balls/Assets/Media/armsFront3.jpg',
         '/home/gilcu2/prog/unity/paint_balls/Assets/Media/armsFront4.jpg',
@@ -108,4 +109,24 @@ if __name__ == '__main__':
         '/home/gilcu2/prog/unity/paint_balls/Assets/Media/armsTop5.jpg',
     ]
 
-    pose(arms_top_files)
+    rightArmBackHead_files = [
+        '/home/gilcu2/prog/unity/paint_balls/Assets/Media/rightArmBackHead0.png',
+        '/home/gilcu2/prog/unity/paint_balls/Assets/Media/rightArmBackHead1.png',
+        '/home/gilcu2/prog/unity/paint_balls/Assets/Media/rightArmBackHead3.jpg',
+        '/home/gilcu2/prog/unity/paint_balls/Assets/Media/rightArmBackHead4.jpg',
+        '/home/gilcu2/prog/unity/paint_balls/Assets/Media/rightArmBackHead5.jpg',
+        '/home/gilcu2/prog/unity/paint_balls/Assets/Media/rightArmBackHead5.jpg',
+    ]
+
+    other_files = [
+        '/home/gilcu2/prog/unity/paint_balls/Assets/Media/leftArmFront5.jpg',
+        '/home/gilcu2/prog/unity/paint_balls/Assets/Media/leftArmOpen1.png',
+        '/home/gilcu2/prog/unity/paint_balls/Assets/Media/rightArmFront3.jpg',
+        '/home/gilcu2/prog/unity/paint_balls/Assets/Media/rightArmFront4.jpg',
+        '/home/gilcu2/prog/unity/paint_balls/Assets/Media/rightArmFrontLeftOpen.png',
+        '/home/gilcu2/prog/unity/paint_balls/Assets/Media/rightArmOpen0.png',
+        '/home/gilcu2/prog/unity/paint_balls/Assets/Media/rightArmOpen1.png',
+        '/home/gilcu2/prog/unity/paint_balls/Assets/Media/rightArmTopLeftFront.jpg',
+    ]
+
+    pose(other_files)
