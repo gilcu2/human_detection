@@ -26,7 +26,8 @@ def pose():
             # pass by reference.
             image.flags.writeable = False
             image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-            cv2.imwrite(f'/tmp/image{idx:03d}.png', image)
+            fliped_image=cv2.flip(image, 1)
+            cv2.imwrite(f'/tmp/image{idx:04d}.png', fliped_image)
             idx += 1
             results = pose.process(image)
 
